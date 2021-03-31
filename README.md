@@ -1,33 +1,11 @@
 # Sessions Test
 
-Welcome to your new Hanami project!
+This is a project to test passing session values between apps.
 
-## Setup
+## Steps to reproduce
 
-How to run tests:
+1. Run the server
+2. Visit /admin/home #=> a test session value is set
+3. You will be redirected to /home where the test value is not displayed.
+4. Check the server output as well to check the missing value.
 
-```
-% bundle exec rake
-```
-
-How to run the development console:
-
-```
-% bundle exec hanami console
-```
-
-How to run the development server:
-
-```
-% bundle exec hanami server
-```
-
-How to prepare (create and migrate) DB for `development` and `test` environments:
-
-```
-% bundle exec hanami db prepare
-
-% HANAMI_ENV=test bundle exec hanami db prepare
-```
-
-Explore Hanami [guides](https://guides.hanamirb.org/), [API docs](http://docs.hanamirb.org/1.3.3/), or jump in [chat](http://chat.hanamirb.org) for help. Enjoy! 🌸
